@@ -32,8 +32,11 @@ end
     @operation = params[:operation]
     @number1 = params[:number1]
     @number2 = params[:number2]
-    
-      math = 1 * 2
+    if @operation == "add"
+      math = @number1.to_i + @number2.to_i
+      elsif @operation == "subtract"
+      math = @number1.to_i - @number2.to_i
+    end
     "#{math}"
   end
 

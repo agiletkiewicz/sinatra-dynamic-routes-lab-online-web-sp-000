@@ -32,7 +32,7 @@ end
     @operation = params[:operation]
     @number1 = params[:number1]
     @number2 = params[:number2]
-    math = @number1.to_i @operation @number2.to_i
+    math = 1 * 2
     "#{math}"
   end
 

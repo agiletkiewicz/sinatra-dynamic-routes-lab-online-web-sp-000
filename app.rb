@@ -35,7 +35,11 @@ end
     if @operation == "add"
       math = @number1.to_i + @number2.to_i
       elsif @operation == "subtract"
-      math = @number1.to_i - @number2.to_i
+        math = @number1.to_i - @number2.to_i
+      elsif @operation == "multiply"
+       math = @number1.to_i * @number2.to_i
+      elsif @operation == "divide"
+        math = @number1.to_i / @number2.to_i
     end
     "#{math}"
   end
